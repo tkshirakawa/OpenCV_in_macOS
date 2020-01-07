@@ -1,5 +1,5 @@
 # OpenCV in macOS GUI Apps
-<strong>Description</strong><br>
+<b>Description</b><br>
 I had been looking for sample codes of OpenCV used in GUI apps of macOS (not for iOS or iPadOS, etc).<br>
 But I couldn't.<br>
 I made a simple sample app of macOS using OpenCV library. I also built ‘opencv2.framework’ of version 4.2.0, and used it in this Xcode project.<br>
@@ -7,7 +7,7 @@ I made a simple sample app of macOS using OpenCV library. I also built ‘opencv
 OpenCV site : https://opencv.org/<br>
 Source of the framework : https://opencv.org/opencv-4-2-0/<br>
 <br>
-<u>NOTE: The file 'opencv2.framework' is too large to upload into GitHub. Please download it from here .</u><br>
+<b>NOTE:</b> The file 'opencv2.framework' is too large to upload into GitHub. Please download it from here XXX.<br>
 <br>
 <b>About Files</b><br>
 CV.mm / CV.h<br>
