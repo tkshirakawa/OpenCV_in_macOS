@@ -1,0 +1,405 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC2033A323C2397B00B58D5A /* OCVImage.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2033A223C2397B00B58D5A /* OCVImage.m */; };
+		CC4CE3E323C4359000E29E11 /* Philadelphia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CC4CE3E023C4358F00E29E11 /* Philadelphia.jpg */; };
+		CC58474923C0FB2C00F42D55 /* OpenCL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC58474823C0FB2C00F42D55 /* OpenCL.framework */; };
+		CC58474D23C0FCB100F42D55 /* OCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = CC58474C23C0FCB100F42D55 /* OCV.mm */; };
+		CC58475323C106BA00F42D55 /* OCVImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC58475223C106BA00F42D55 /* OCVImageController.m */; };
+		CCCD73D923BCE0200013259A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCD73D823BCE0200013259A /* AppDelegate.m */; };
+		CCCD73DB23BCE0210013259A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCCD73DA23BCE0210013259A /* Assets.xcassets */; };
+		CCCD73DE23BCE0210013259A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCCD73DC23BCE0210013259A /* MainMenu.xib */; };
+		CCCD73E123BCE0210013259A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCD73E023BCE0210013259A /* main.m */; };
+		CCCD73EB23BCE0A40013259A /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCD73EA23BCE0A40013259A /* opencv2.framework */; };
+		CCDA210723C40BB900665D0C /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCDA210623C40BB900665D0C /* Accelerate.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CC2033A023C2011500B58D5A /* OCVColorConversionCodes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCVColorConversionCodes.h; sourceTree = "<group>"; };
+		CC2033A123C2397B00B58D5A /* OCVImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCVImage.h; sourceTree = "<group>"; };
+		CC2033A223C2397B00B58D5A /* OCVImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCVImage.m; sourceTree = "<group>"; };
+		CC4CE3E023C4358F00E29E11 /* Philadelphia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Philadelphia.jpg; sourceTree = "<group>"; };
+		CC58474823C0FB2C00F42D55 /* OpenCL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenCL.framework; path = System/Library/Frameworks/OpenCL.framework; sourceTree = SDKROOT; };
+		CC58474B23C0FCB100F42D55 /* OCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCV.h; sourceTree = "<group>"; };
+		CC58474C23C0FCB100F42D55 /* OCV.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OCV.mm; sourceTree = "<group>"; };
+		CC58475123C106BA00F42D55 /* OCVImageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCVImageController.h; sourceTree = "<group>"; };
+		CC58475223C106BA00F42D55 /* OCVImageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCVImageController.m; sourceTree = "<group>"; };
+		CCCD73D423BCE0200013259A /* OpenCV for macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OpenCV for macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCCD73D723BCE0200013259A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CCCD73D823BCE0200013259A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CCCD73DA23BCE0210013259A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CCCD73DD23BCE0210013259A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		CCCD73DF23BCE0210013259A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCCD73E023BCE0210013259A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CCCD73E223BCE0210013259A /* OpenCV_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OpenCV_macOS.entitlements; sourceTree = "<group>"; };
+		CCCD73EA23BCE0A40013259A /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = Frameworks/opencv2.framework; sourceTree = "<group>"; };
+		CCDA210623C40BB900665D0C /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CCCD73D123BCE0200013259A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCDA210723C40BB900665D0C /* Accelerate.framework in Frameworks */,
+				CC58474923C0FB2C00F42D55 /* OpenCL.framework in Frameworks */,
+				CCCD73EB23BCE0A40013259A /* opencv2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC4CE3DD23C4358F00E29E11 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CC4CE3E023C4358F00E29E11 /* Philadelphia.jpg */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CC58474A23C0FCB100F42D55 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				CC58474B23C0FCB100F42D55 /* OCV.h */,
+				CC58474C23C0FCB100F42D55 /* OCV.mm */,
+				CC2033A023C2011500B58D5A /* OCVColorConversionCodes.h */,
+				CC2033A123C2397B00B58D5A /* OCVImage.h */,
+				CC2033A223C2397B00B58D5A /* OCVImage.m */,
+				CC58475123C106BA00F42D55 /* OCVImageController.h */,
+				CC58475223C106BA00F42D55 /* OCVImageController.m */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		CCCD73CB23BCE0200013259A = {
+			isa = PBXGroup;
+			children = (
+				CC58474A23C0FCB100F42D55 /* Sources */,
+				CC4CE3DD23C4358F00E29E11 /* Resources */,
+				CCCD73D623BCE0200013259A /* OpenCV_macOS */,
+				CCCD73E923BCE0A30013259A /* Frameworks */,
+				CCCD73D523BCE0200013259A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CCCD73D523BCE0200013259A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCCD73D423BCE0200013259A /* OpenCV for macOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCCD73D623BCE0200013259A /* OpenCV_macOS */ = {
+			isa = PBXGroup;
+			children = (
+				CCCD73D723BCE0200013259A /* AppDelegate.h */,
+				CCCD73D823BCE0200013259A /* AppDelegate.m */,
+				CCCD73DA23BCE0210013259A /* Assets.xcassets */,
+				CCCD73DC23BCE0210013259A /* MainMenu.xib */,
+				CCCD73DF23BCE0210013259A /* Info.plist */,
+				CCCD73E023BCE0210013259A /* main.m */,
+				CCCD73E223BCE0210013259A /* OpenCV_macOS.entitlements */,
+			);
+			path = OpenCV_macOS;
+			sourceTree = "<group>";
+		};
+		CCCD73E923BCE0A30013259A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCDA210623C40BB900665D0C /* Accelerate.framework */,
+				CC58474823C0FB2C00F42D55 /* OpenCL.framework */,
+				CCCD73EA23BCE0A40013259A /* opencv2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CCCD73D323BCE0200013259A /* OpenCV_macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCCD73E523BCE0210013259A /* Build configuration list for PBXNativeTarget "OpenCV_macOS" */;
+			buildPhases = (
+				CCCD73D023BCE0200013259A /* Sources */,
+				CCCD73D123BCE0200013259A /* Frameworks */,
+				CCCD73D223BCE0200013259A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenCV_macOS;
+			productName = OpenCV_macOS;
+			productReference = CCCD73D423BCE0200013259A /* OpenCV for macOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CCCD73CC23BCE0200013259A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Takashi Shirakawa";
+				TargetAttributes = {
+					CCCD73D323BCE0200013259A = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = CCCD73CF23BCE0200013259A /* Build configuration list for PBXProject "OpenCV_macOS" */;
+			compatibilityVersion = "Xcode 11.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CCCD73CB23BCE0200013259A;
+			productRefGroup = CCCD73D523BCE0200013259A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CCCD73D323BCE0200013259A /* OpenCV_macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CCCD73D223BCE0200013259A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCCD73DB23BCE0210013259A /* Assets.xcassets in Resources */,
+				CC4CE3E323C4359000E29E11 /* Philadelphia.jpg in Resources */,
+				CCCD73DE23BCE0210013259A /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CCCD73D023BCE0200013259A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC58474D23C0FCB100F42D55 /* OCV.mm in Sources */,
+				CC2033A323C2397B00B58D5A /* OCVImage.m in Sources */,
+				CCCD73E123BCE0210013259A /* main.m in Sources */,
+				CC58475323C106BA00F42D55 /* OCVImageController.m in Sources */,
+				CCCD73D923BCE0200013259A /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CCCD73DC23BCE0210013259A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCCD73DD23BCE0210013259A /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CCCD73E323BCE0210013259A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CCCD73E423BCE0210013259A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CCCD73E623BCE0210013259A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_ENTITLEMENTS = OpenCV_macOS/OpenCV_macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Y5FE5M8RRY;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				INFOPLIST_FILE = OpenCV_macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TDHM.OpenCV-macOS";
+				PRODUCT_NAME = "OpenCV for macOS";
+				VALID_ARCHS = x86_64;
+			};
+			name = Debug;
+		};
+		CCCD73E723BCE0210013259A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_ENTITLEMENTS = OpenCV_macOS/OpenCV_macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Y5FE5M8RRY;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				INFOPLIST_FILE = OpenCV_macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TDHM.OpenCV-macOS";
+				PRODUCT_NAME = "OpenCV for macOS";
+				VALID_ARCHS = x86_64;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CCCD73CF23BCE0200013259A /* Build configuration list for PBXProject "OpenCV_macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCCD73E323BCE0210013259A /* Debug */,
+				CCCD73E423BCE0210013259A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCCD73E523BCE0210013259A /* Build configuration list for PBXNativeTarget "OpenCV_macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCCD73E623BCE0210013259A /* Debug */,
+				CCCD73E723BCE0210013259A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CCCD73CC23BCE0200013259A /* Project object */;
+}
