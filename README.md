@@ -23,4 +23,4 @@ Codes to maintain window and other GUIs for this sample app.<br>
 <br>
 <img width="942" alt="window" src="https://user-images.githubusercontent.com/52600509/71859174-4b9d9b00-3131-11ea-816e-ae7cf78d976b.png">
 <br>
-*The picture : The house of American Philosophical Society, taken from the backyard of Independence Hall in Philadelphia, USA.
+<i>*The picture : The house of American Philosophical Society, taken from the backyard of Independence Hall in Philadelphia, USA.</i>
