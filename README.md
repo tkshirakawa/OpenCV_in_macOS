@@ -7,7 +7,7 @@ I made a simple sample app of macOS using OpenCV library. I also built ‘opencv
 OpenCV site : https://opencv.org/<br>
 Source of the framework : https://opencv.org/opencv-4-2-0/<br>
 <br>
-<b>NOTE:</b> The file 'opencv2.framework' is too large to upload into GitHub. Please download it from here XXX.<br>
+<b>NOTE:</b> The file 'opencv2.framework' is too large to upload into GitHub. Please download it from https://www.icloud.com/iclouddrive/0EIN-yCPcwjrx0fzdAA6Z9DkA#opencv2.framework<br>
 <br>
 <br>
 <b>About Files</b><br>
