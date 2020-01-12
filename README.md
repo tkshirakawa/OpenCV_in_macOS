@@ -1,7 +1,7 @@
 # OpenCV in macOS GUI Apps
 A sample Xcode project using OpenCV library in macOS GUI apps. 
  
-<img width="942" alt="window" src="https://user-images.githubusercontent.com/52600509/71859174-4b9d9b00-3131-11ea-816e-ae7cf78d976b.png"> 
+<img width="942" alt="window" src="https://user-images.githubusercontent.com/52600509/71859174-4b9d9b00-3131-11ea-816e-ae7cf78d976b.png">
 *The picture : The house of American Philosophical Society, taken from the backyard of Independence Hall in Philadelphia, USA.*
   
 ## Description 
