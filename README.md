@@ -5,14 +5,16 @@ The following sample app shows results of CLAHE (Contrast Limited Adaptive Histo
 *The picture : The house of American Philosophical Society, taken from the backyard of Independence Hall in Philadelphia, USA.*
   
   
+  
 ## Description
 I had been looking for sample codes of OpenCV used in GUI apps of macOS (not for iOS or iPadOS, etc). But I couldn't.  
 So, I made a simple sample app of macOS using OpenCV library. I also built ‘opencv2.framework’ of version 4.2.0, and used it in this Xcode project.  
   
-OpenCV site : https://opencv.org/  
-Source of the framework : https://opencv.org/opencv-4-2-0/  
+OpenCV site : <https://opencv.org/>  
+Source of the framework : <https://opencv.org/opencv-4-2-0/>  
   
-**NOTE:** The file 'opencv2.framework' is too large to upload into GitHub. Please download it from [here](https://www.icloud.com/iclouddrive/0l0nK8HIE8oXmQdRe_C1KyuaQ#opencv2.framework)  
+**NOTE:** The file 'opencv2.framework' is too large to upload into GitHub. You can download it from [HERE](https://www.icloud.com/iclouddrive/0l0nK8HIE8oXmQdRe_C1KyuaQ#opencv2.framework).  
+  
   
   
 ## About Files
