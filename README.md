@@ -5,12 +5,12 @@ A sample Xcode project using OpenCV library in macOS GUI apps.
 <br>
 <br>
 ## Description 
-I had been looking for sample codes of OpenCV used in GUI apps of macOS (not for iOS or iPadOS, etc). But I couldn't. 
-So, I made a simple sample app of macOS using OpenCV library. I also built ‘opencv2.framework’ of version 4.2.0, and used it in this Xcode project. 
-The sample app shows results of CLAHE (Contrast Limited Adaptive Histogram Equalization) and Gaussian blur filters. 
- 
-OpenCV site : https://opencv.org/ 
-Source of the framework : https://opencv.org/opencv-4-2-0/ 
+I had been looking for sample codes of OpenCV used in GUI apps of macOS (not for iOS or iPadOS, etc). But I couldn't.<br>
+So, I made a simple sample app of macOS using OpenCV library. I also built ‘opencv2.framework’ of version 4.2.0, and used it in this Xcode project.<br>
+The sample app shows results of CLAHE (Contrast Limited Adaptive Histogram Equalization) and Gaussian blur filters.<br>
+<br>
+OpenCV site : https://opencv.org/<br>
+Source of the framework : https://opencv.org/opencv-4-2-0/<br>
  
 **NOTE:** The file 'opencv2.framework' is too large to upload into GitHub. Please download it from 
 https://www.icloud.com/iclouddrive/0l0nK8HIE8oXmQdRe_C1KyuaQ#opencv2.framework 
