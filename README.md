@@ -1,5 +1,5 @@
 # OpenCV in macOS GUI Apps
-A sample Xcode project using OpenCV library in macOS GUI apps.  
+A sample Xcode project using OpenCV library in macOS GUI apps (not command line tools).  
 The following sample app shows results of CLAHE (Contrast Limited Adaptive Histogram Equalization) and Gaussian blur filters.  
 <img width="800" alt="window" src="https://user-images.githubusercontent.com/52600509/71859174-4b9d9b00-3131-11ea-816e-ae7cf78d976b.png">  
 *The picture : The house of American Philosophical Society, taken from the backyard of Independence Hall in Philadelphia, USA.*
@@ -19,7 +19,7 @@ Source of the framework : <https://opencv.org/opencv-4-2-0/>
   
 ## About Files
 **OCV.mm / OCV.h**  
-A wrapper class written in objective C++ (.mm file). They connect other objective C codes to OpenCV framework (opencv2.framework) written in C++11.  
+A wrapper class written in objective C++ (.mm file). They connect other objective C codes for macOS to OpenCV framework (opencv2.framework) written in C++11.  
   
 **OCVImage.m / OCVImage.h**  
 An objective C class to munipulate bitmap data for OpenCV based on macOS images (NSImage, CGImage and NSBitmapImageRep). If the bitmap is color data with multiple channels, the color order stored in this class is BGR (Blue-Green-Red), default in OpenCV.  
