@@ -1,6 +1,6 @@
 # OpenCV in macOS GUI Apps
 A sample Xcode project using OpenCV library in macOS GUI apps (not command line tools).  
-The following sample app shows results of CLAHE (Contrast Limited Adaptive Histogram Equalization) and Gaussian blur filters.  
+The following sample app shows results of **CLAHE (Contrast Limited Adaptive Histogram Equalization)** and **Gaussian blur** filters.  
 <img width="940" alt="window" src="https://user-images.githubusercontent.com/52600509/71859174-4b9d9b00-3131-11ea-816e-ae7cf78d976b.png">  
 *The picture is the house of American Philosophical Society in Philadelphia, USA (from the backyard of Independence Hall).*  
   
