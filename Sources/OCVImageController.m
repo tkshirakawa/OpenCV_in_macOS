@@ -49,7 +49,7 @@
     [claheImageView setImage:img1];
     [gBlurImageView setImage:img1];
 
-    NSImage* img2 = [NSImage imageNamed:@"FaceBW.png"];
+    NSImage* img2 = [NSImage imageNamed:@"Gear.png"];
     [sourceImageView2 setImage:img2];
     [contoursImageView setImage:img2];
 
@@ -57,10 +57,10 @@
     sourceImage1 = [OCVImage ocvImageFromNSImage:img1];
     claheImage   = [OCVImage ocvImageFromBitmap:NULL withParametersOf:sourceImage1 conversionCode:-1];
     gBlurImage   = [OCVImage ocvImageFromBitmap:NULL withParametersOf:sourceImage1 conversionCode:-1];
-
-    OCVImage* tempImg = [OCVImage ocvImageFromNSImage:img2];
-    sourceImage2 = [OCVImage ocvImageFromBitmap:NULL withParametersOf:tempImg conversionCode:-1];
-    [OCV convertColor:tempImg destination:sourceImage2 cc:COLOR_BGR2GRAY];      // Type of source image must be CV_8UC1 to find countours
+    sourceImage2 = [OCVImage ocvImageFromNSImage:img2];     // Type of source image must be CV_8UC1 to find countours
+//    OCVImage* tempImg = [OCVImage ocvImageFromNSImage:img2];
+//    sourceImage2 = [OCVImage ocvImageFromBitmap:NULL withParametersOf:tempImg conversionCode:-1];
+//    [OCV convertColor:tempImg destination:sourceImage2 cc:COLOR_BGR2GRAY];
 
     // Show image data
     [sourceImageInfo1 setStringValue:[NSString stringWithFormat:@"Image name : %@\nImage size : %dx%d\nSamples per pixel : %d\nObject class : %@", img1.name, sourceImage1.pwidth, sourceImage1.pheight, sourceImage1.samplesPerPixel, sourceImage1.className]];
@@ -129,8 +129,12 @@
 
 - (IBAction) buttonFindContours:(id)sender
 {
+    [contoursImageView setImage:sourceImage2.nsImage];
+
+
     // Find countours, type of the source image must be CV_8UC1
-    NSArray<NSArray<NSData*>*>* contours = [OCV findContours:sourceImage2 scale:NSMakePoint(1.0,1.0) offset:NSZeroPoint epsilon:1e-3];
+    // Method = 1 means CHAIN_APPROX_NONE
+    NSArray<NSArray<NSData*>*>* contours = [OCV findContours:sourceImage2 method:1 scale:NSMakePoint(1.0,1.0) offset:NSZeroPoint epsilon:1e-3];
 
     if (contours && contours.count > 0)
     {
@@ -142,28 +146,27 @@
             CGContextAddRect(context, CGRectMake(0.0 , 0.0, sourceImage2.pwidth, sourceImage2.pheight));
             CGContextFillPath(context);
 
-            CGContextSetRGBStrokeColor(context, 1.0, 0.0, 0.0, 1.0);
-            CGContextSetLineWidth(context, 5.0);
-
             // Draw contour lines
+            CGContextSetRGBStrokeColor(context, 1.0, 0.0, 0.0, 1.0);
+            CGContextSetLineWidth(context, (sourceImage2.pwidth+sourceImage2.pheight)/250.0);
             for (NSArray<NSData*>* points in contours)
             {
                 NSPoint p;
-                [points[0] getBytes:&p length:sizeof(NSPoint)];
+                [points[points.count-1] getBytes:&p length:sizeof(NSPoint)];
                 CGContextMoveToPoint(context, p.x, sourceImage2.pheight - p.y);
-                for (int i = 1; i < points.count; ++i)
+                for (int i = 0; i < points.count; ++i)
                 {
                     [points[i] getBytes:&p length:sizeof(NSPoint)];
                     CGContextAddLineToPoint(context, p.x, sourceImage2.pheight - p.y);
                 }
-                CGContextStrokePath(context);
             }
+            CGContextStrokePath(context);
 
             // Set image
             CGImageRef imageRef = CGBitmapContextCreateImage(context);
             NSImage* img = imageRef ? [[NSImage alloc] initWithCGImage:imageRef size:NSZeroSize] : nil;
             if (img) [contoursImageView setImage:img];
-            
+
             CGContextRelease(context);
         }
         CGColorSpaceRelease(colorSpace);

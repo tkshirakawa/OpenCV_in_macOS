@@ -29,7 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
     __weak IBOutlet NSImageView *claheImageView;
     __weak IBOutlet NSImageView *gBlurImageView;
 
-    // For FaceBW.png
+    // For Gear.png
     OCVImage* sourceImage2;
 //    OCVImage* contoursImage;
     __weak IBOutlet NSTextField *sourceImageInfo2;

@@ -385,17 +385,17 @@
 #pragma mark === Find contours ===
 
 
-+ (NSArray<NSArray<NSData*>*>*) findContours:(OCVImage*)srcImage scale:(NSPoint)scale offset:(NSPoint)offset epsilon:(double)epsilon
++ (NSArray<NSArray<NSData*>*>*) findContours:(OCVImage*)srcImage method:(int)method scale:(NSPoint)scale offset:(NSPoint)offset epsilon:(double)epsilon
 {
     // Type of source image must be CV_8UC1 to find countours
     if (srcImage && srcImage.cvtype == CV_8UC1)
-        return [OCV findContours:srcImage.bitmapData width:srcImage.pwidth height:srcImage.pheight scale:scale offset:offset epsilon:epsilon];
+        return [OCV findContours:srcImage.bitmapData width:srcImage.pwidth height:srcImage.pheight method:method scale:scale offset:offset epsilon:epsilon];
     else
         return nil;
 }
 
 
-+ (NSArray<NSArray<NSData*>*>*) findContours:(uchar*)srcData width:(int)width height:(int)height scale:(NSPoint)scale offset:(NSPoint)offset epsilon:(double)epsilon
++ (NSArray<NSArray<NSData*>*>*) findContours:(uchar*)srcData width:(int)width height:(int)height method:(int)method scale:(NSPoint)scale offset:(NSPoint)offset epsilon:(double)epsilon
 {
     if (!srcData || width <= 0 || height <= 0) return nil;
 
@@ -404,7 +404,8 @@
     {
         cv::Mat src(height, width, CV_8UC1, srcData, width);
         std::vector<std::vector<cv::Point>> contours;
-        cv::findContours(src, contours, cv::RETR_LIST, cv::CHAIN_APPROX_NONE);
+        cv::findContours(src, contours, cv::RETR_LIST, method);
+//        cv::findContours(src, contours, cv::RETR_LIST, cv::CHAIN_APPROX_NONE);
 //        cv::findContours(src, contours, cv::RETR_LIST, cv::CHAIN_APPROX_SIMPLE);
 //        cv::findContours(src, contours, cv::RETR_LIST, cv::CHAIN_APPROX_TC89_L1);
 //        cv::findContours(src, contours, cv::RETR_LIST, cv::CHAIN_APPROX_TC89_KCOS);

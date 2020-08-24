@@ -68,8 +68,8 @@
 // Find contours, a little bit complicated
 #pragma mark === Find contours ===
 
-+ (NSArray<NSArray<NSData*>*>*) findContours:(OCVImage*)srcImage scale:(NSPoint)scale offset:(NSPoint)offset epsilon:(double)epsilon;
-+ (NSArray<NSArray<NSData*>*>*) findContours:(uchar*)srcData width:(int)width height:(int)height scale:(NSPoint)scale offset:(NSPoint)offset epsilon:(double)epsilon;
++ (NSArray<NSArray<NSData*>*>*) findContours:(OCVImage*)srcImage method:(int)method scale:(NSPoint)scale offset:(NSPoint)offset epsilon:(double)epsilon;
++ (NSArray<NSArray<NSData*>*>*) findContours:(uchar*)srcData width:(int)width height:(int)height method:(int)method scale:(NSPoint)scale offset:(NSPoint)offset epsilon:(double)epsilon;
 
 
 // Other filters... as sample codes
