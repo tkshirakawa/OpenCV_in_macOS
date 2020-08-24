@@ -14,8 +14,7 @@ OpenCV site : <https://opencv.org/>
 Source of the framework : <https://opencv.org/releases/>  
 I follow [the license of OpenCV](https://github.com/tkshirakawa/OpenCV_in_macOS/blob/master/LICENSE%20of%20OpenCV) for OpenCV library and opencv2.framework.  
   
-**NOTE:** You can download 'opencv2.framework' that I built for my macOS apps and this sample code, from [HERE](https://1drv.ms/u/s!AjXH_7BsMKXajpd9CWN2SouiYQzz5w?e=KTcRLl). And put it in your Xcode project as following:
-  
+Download 'opencv2.framework' that I built for my macOS apps and this sample code, from [HERE](https://1drv.ms/u/s!AjXH_7BsMKXajpd9CWN2SouiYQzz5w?e=KTcRLl). And put it in your Xcode project as following:
 <img width="1680" alt="Screen Shot 2020-08-24 at 12 35 05" src="https://user-images.githubusercontent.com/52600509/91002071-8db81600-e608-11ea-9e89-b4713a58d33c.png">
   
   
