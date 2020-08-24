@@ -387,7 +387,8 @@
 
 + (NSArray<NSArray<NSData*>*>*) findContours:(OCVImage*)srcImage scale:(NSPoint)scale offset:(NSPoint)offset epsilon:(double)epsilon
 {
-    if (srcImage)
+    // Type of source image must be CV_8UC1 to find countours
+    if (srcImage && srcImage.cvtype == CV_8UC1)
         return [OCV findContours:srcImage.bitmapData width:srcImage.pwidth height:srcImage.pheight scale:scale offset:offset epsilon:epsilon];
     else
         return nil;
@@ -398,6 +399,7 @@
 {
     if (!srcData || width <= 0 || height <= 0) return nil;
 
+    // Type of source image must be CV_8UC1 to find countours
     @try
     {
         cv::Mat src(height, width, CV_8UC1, srcData, width);

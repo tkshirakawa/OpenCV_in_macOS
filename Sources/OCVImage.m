@@ -199,7 +199,7 @@
                                                                              pixelsWide: _pwidth    pixelsHigh: _pheight
                                                                           bitsPerSample: 8     samplesPerPixel: _samplesPerPixel
                                                                                hasAlpha: NO           isPlanar: NO
-                                                                         colorSpaceName: NSDeviceRGBColorSpace
+                                                                         colorSpaceName: (_samplesPerPixel > 1 ? NSDeviceRGBColorSpace : NSDeviceWhiteColorSpace)
                                                                             bytesPerRow: _bytesPerRow
                                                                            bitsPerPixel: 0];
         // Bitmap data stored in OCVImage class is BGR order!
