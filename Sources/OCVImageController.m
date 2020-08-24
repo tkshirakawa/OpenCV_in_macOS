@@ -128,7 +128,7 @@
 - (IBAction) buttonFindContours:(id)sender
 {
     // Find countours
-    NSArray<NSArray<NSData*>*>* contours = [OCV findContours:sourceImage2 scale:NSMakePoint(1.0,1.0) offset:NSZeroPoint epsilon:1e-5];
+    NSArray<NSArray<NSData*>*>* contours = [OCV findContours:sourceImage2 scale:NSMakePoint(1.0,1.0) offset:NSZeroPoint epsilon:1e-3];
 
     if (contours && contours.count > 1)
     {
