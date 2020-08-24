@@ -385,6 +385,15 @@
 #pragma mark === Find contours ===
 
 
++ (NSArray<NSArray<NSData*>*>*) findContours:(OCVImage*)srcImage scale:(NSPoint)scale offset:(NSPoint)offset epsilon:(double)epsilon
+{
+    if (srcImage)
+        return [OCV findContours:srcImage.bitmapData width:srcImage.pwidth height:srcImage.pheight scale:scale offset:offset epsilon:epsilon];
+    else
+        return nil;
+}
+
+
 + (NSArray<NSArray<NSData*>*>*) findContours:(uchar*)srcData width:(int)width height:(int)height scale:(NSPoint)scale offset:(NSPoint)offset epsilon:(double)epsilon
 {
     if (!srcData || width <= 0 || height <= 0) return nil;

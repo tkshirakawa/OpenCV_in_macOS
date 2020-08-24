@@ -12,6 +12,8 @@
 		CC58474923C0FB2C00F42D55 /* OpenCL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC58474823C0FB2C00F42D55 /* OpenCL.framework */; };
 		CC58474D23C0FCB100F42D55 /* OCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = CC58474C23C0FCB100F42D55 /* OCV.mm */; };
 		CC58475323C106BA00F42D55 /* OCVImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC58475223C106BA00F42D55 /* OCVImageController.m */; };
+		CCBF982F24F3BE2B00E63FC9 /* FaceBW.png in Resources */ = {isa = PBXBuildFile; fileRef = CCBF982E24F3BE2B00E63FC9 /* FaceBW.png */; };
+		CCBF983124F3C6CA00E63FC9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCBF983024F3C6CA00E63FC9 /* CoreGraphics.framework */; };
 		CCCD73D923BCE0200013259A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCD73D823BCE0200013259A /* AppDelegate.m */; };
 		CCCD73DB23BCE0210013259A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCCD73DA23BCE0210013259A /* Assets.xcassets */; };
 		CCCD73DE23BCE0210013259A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCCD73DC23BCE0210013259A /* MainMenu.xib */; };
@@ -30,6 +32,8 @@
 		CC58474C23C0FCB100F42D55 /* OCV.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OCV.mm; sourceTree = "<group>"; };
 		CC58475123C106BA00F42D55 /* OCVImageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCVImageController.h; sourceTree = "<group>"; };
 		CC58475223C106BA00F42D55 /* OCVImageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCVImageController.m; sourceTree = "<group>"; };
+		CCBF982E24F3BE2B00E63FC9 /* FaceBW.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FaceBW.png; sourceTree = "<group>"; };
+		CCBF983024F3C6CA00E63FC9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		CCCD73D423BCE0200013259A /* OpenCV for macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OpenCV for macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCCD73D723BCE0200013259A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CCCD73D823BCE0200013259A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -47,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCBF983124F3C6CA00E63FC9 /* CoreGraphics.framework in Frameworks */,
 				CCDA210723C40BB900665D0C /* Accelerate.framework in Frameworks */,
 				CC58474923C0FB2C00F42D55 /* OpenCL.framework in Frameworks */,
 				CCCD73EB23BCE0A40013259A /* opencv2.framework in Frameworks */,
@@ -60,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				CC4CE3E023C4358F00E29E11 /* Philadelphia.jpg */,
+				CCBF982E24F3BE2B00E63FC9 /* FaceBW.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -114,6 +120,7 @@
 		CCCD73E923BCE0A30013259A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CCBF983024F3C6CA00E63FC9 /* CoreGraphics.framework */,
 				CCDA210623C40BB900665D0C /* Accelerate.framework */,
 				CC58474823C0FB2C00F42D55 /* OpenCL.framework */,
 				CCCD73EA23BCE0A40013259A /* opencv2.framework */,
@@ -179,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCCD73DB23BCE0210013259A /* Assets.xcassets in Resources */,
+				CCBF982F24F3BE2B00E63FC9 /* FaceBW.png in Resources */,
 				CC4CE3E323C4359000E29E11 /* Philadelphia.jpg in Resources */,
 				CCCD73DE23BCE0210013259A /* MainMenu.xib in Resources */,
 			);

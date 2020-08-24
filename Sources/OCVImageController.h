@@ -17,20 +17,24 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface OCVImageController : NSObject
 {
-    OCVImage* sourceImage;
+    __weak IBOutlet NSWindow *window;
+    __weak IBOutlet NSTextField *openCVVersion;
+
+    // For Philadelphia.jpg
+    OCVImage* sourceImage1;
     OCVImage* claheImage;
     OCVImage* gBlurImage;
-
-
-    __weak IBOutlet NSWindow *window;
-
-    __weak IBOutlet NSTextField *openCVVersion;
-    
-    __weak IBOutlet NSTextField *sourceImageInfo;
-    __weak IBOutlet NSImageView *sourceImageView;
+    __weak IBOutlet NSTextField *sourceImageInfo1;
+    __weak IBOutlet NSImageView *sourceImageView1;
     __weak IBOutlet NSImageView *claheImageView;
     __weak IBOutlet NSImageView *gBlurImageView;
-    
+
+    // For FaceBW.png
+    OCVImage* sourceImage2;
+//    OCVImage* contoursImage;
+    __weak IBOutlet NSTextField *sourceImageInfo2;
+    __weak IBOutlet NSImageView *sourceImageView2;
+    __weak IBOutlet NSImageView *contoursImageView;
 }
 
 - (instancetype) init;
@@ -42,6 +46,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (IBAction) slideClipLimit:(NSSlider*)slider;
 - (IBAction) slideKernelSize:(NSSlider*)slider;
+- (IBAction) buttonFindContours:(id)sender;
 
 @end
 
