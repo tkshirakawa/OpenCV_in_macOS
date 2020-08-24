@@ -7,13 +7,13 @@ The following sample app shows results of **CLAHE (Contrast Limited Adaptive His
   
   
 ## Description
-I had been looking for sample codes of OpenCV used in GUI apps of macOS (not for iOS or iPadOS, etc). But I couldn't.  
-So, I made a simple sample app of macOS using OpenCV library. I also built ‘opencv2.framework’ of version 4.2.0, and used it in this Xcode project.  
+I had been looking for sample codes of OpenCV used in macOS GUI apps (not for iOS, iPadOS or command line tools). But I couldn't.  
+So, I made a simple sample app of macOS using OpenCV library. I also built ‘opencv2.framework’ of version 4.3.0, and used it in this Xcode project.  
   
 OpenCV site : <https://opencv.org/>  
-Source of the framework : <https://opencv.org/opencv-4-2-0/>  
+Source of the framework : <https://opencv.org/releases/>  
   
-**NOTE:** The file 'opencv2.framework' is too large to upload into GitHub. You can download it from [HERE](https://www.icloud.com/iclouddrive/0l0nK8HIE8oXmQdRe_C1KyuaQ#opencv2.framework). I follow [the license of OpenCV](https://github.com/tkshirakawa/OpenCV_in_macOS/blob/master/LICENSE%20of%20OpenCV) for OpenCV library and opencv2.framework.  
+**NOTE:** You can download 'opencv2.framework' that I built for my macOS apps and this sample code, from [HERE](https://1drv.ms/u/s!AjXH_7BsMKXajpd9CWN2SouiYQzz5w?e=KTcRLl). I follow [the license of OpenCV](https://github.com/tkshirakawa/OpenCV_in_macOS/blob/master/LICENSE%20of%20OpenCV) for OpenCV library and opencv2.framework.  
   
   
 ## About Files
