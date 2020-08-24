@@ -32,7 +32,7 @@
 		CC58474C23C0FCB100F42D55 /* OCV.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OCV.mm; sourceTree = "<group>"; };
 		CC58475123C106BA00F42D55 /* OCVImageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCVImageController.h; sourceTree = "<group>"; };
 		CC58475223C106BA00F42D55 /* OCVImageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCVImageController.m; sourceTree = "<group>"; };
-		CCBF982E24F3BE2B00E63FC9 /* FaceBW.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FaceBW.png; sourceTree = "<group>"; };
+		CCBF982E24F3BE2B00E63FC9 /* FaceBW.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FaceBW.png; path = "New Group/FaceBW.png"; sourceTree = "<group>"; };
 		CCBF983024F3C6CA00E63FC9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		CCCD73D423BCE0200013259A /* OpenCV for macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OpenCV for macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCCD73D723BCE0200013259A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
