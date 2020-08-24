@@ -1,6 +1,2 @@
-<<<<<<< HEAD
-NOTE: The file 'opencv2.framework' is too large to upload into GitHub. Please download it from https://www.icloud.com/iclouddrive/0EIN-yCPcwjrx0fzdAA6Z9DkA#opencv2.framework
-=======
-NOTE: The file 'opencv2.framework' is too large to upload into GitHub. Please download it from
-https://www.icloud.com/iclouddrive/0EIN-yCPcwjrx0fzdAA6Z9DkA#opencv2.framework
->>>>>>> master
+opencv2.framework of OpenCV version 4.3.0 for macOS GUI apps:
+https://1drv.ms/u/s!AjXH_7BsMKXajpd9CWN2SouiYQzz5w?e=KTcRLl
