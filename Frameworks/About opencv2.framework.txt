@@ -1,2 +1,2 @@
-opencv2.framework of OpenCV version 4.3.0 for macOS GUI apps:
-https://1drv.ms/u/s!AjXH_7BsMKXajpd9CWN2SouiYQzz5w?e=KTcRLl
+opencv2.framework of OpenCV version 4.5.0 for macOS GUI apps:
+https://1drv.ms/u/s!AjXH_7BsMKXajtN51aj4N5i00F5MiQ?e=XZ4e3S
