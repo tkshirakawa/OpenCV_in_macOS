@@ -281,6 +281,7 @@ enum OCVColorConversionCodes {
     COLOR_BayerGR2RGBA = COLOR_BayerGB2BGRA,
 
     COLOR_COLORCVT_MAX  = 143
+
 };
 
 
