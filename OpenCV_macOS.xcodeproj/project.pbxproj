@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		CC2033A323C2397B00B58D5A /* OCVImage.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2033A223C2397B00B58D5A /* OCVImage.m */; };
 		CC4CE3E323C4359000E29E11 /* Philadelphia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CC4CE3E023C4358F00E29E11 /* Philadelphia.jpg */; };
-		CC58474923C0FB2C00F42D55 /* OpenCL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC58474823C0FB2C00F42D55 /* OpenCL.framework */; };
 		CC58474D23C0FCB100F42D55 /* OCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = CC58474C23C0FCB100F42D55 /* OCV.mm */; };
 		CC58475323C106BA00F42D55 /* OCVImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC58475223C106BA00F42D55 /* OCVImageController.m */; };
 		CCBF983124F3C6CA00E63FC9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCBF983024F3C6CA00E63FC9 /* CoreGraphics.framework */; };
@@ -27,7 +26,6 @@
 		CC2033A123C2397B00B58D5A /* OCVImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCVImage.h; sourceTree = "<group>"; };
 		CC2033A223C2397B00B58D5A /* OCVImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCVImage.m; sourceTree = "<group>"; };
 		CC4CE3E023C4358F00E29E11 /* Philadelphia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Philadelphia.jpg; sourceTree = "<group>"; };
-		CC58474823C0FB2C00F42D55 /* OpenCL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenCL.framework; path = System/Library/Frameworks/OpenCL.framework; sourceTree = SDKROOT; };
 		CC58474B23C0FCB100F42D55 /* OCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCV.h; sourceTree = "<group>"; };
 		CC58474C23C0FCB100F42D55 /* OCV.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OCV.mm; sourceTree = "<group>"; };
 		CC58475123C106BA00F42D55 /* OCVImageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCVImageController.h; sourceTree = "<group>"; };
@@ -53,7 +51,6 @@
 			files = (
 				CCBF983124F3C6CA00E63FC9 /* CoreGraphics.framework in Frameworks */,
 				CCDA210723C40BB900665D0C /* Accelerate.framework in Frameworks */,
-				CC58474923C0FB2C00F42D55 /* OpenCL.framework in Frameworks */,
 				CCCD73EB23BCE0A40013259A /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -122,7 +119,6 @@
 			children = (
 				CCBF983024F3C6CA00E63FC9 /* CoreGraphics.framework */,
 				CCDA210623C40BB900665D0C /* Accelerate.framework */,
-				CC58474823C0FB2C00F42D55 /* OpenCL.framework */,
 				CCCD73EA23BCE0A40013259A /* opencv2.framework */,
 			);
 			name = Frameworks;
@@ -337,7 +333,8 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_ENTITLEMENTS = OpenCV_macOS/OpenCV_macOS.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = Y5FE5M8RRY;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -351,10 +348,12 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.TDHM.OpenCV-macOS";
 				PRODUCT_NAME = "OpenCV for macOS";
-				VALID_ARCHS = x86_64;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				VALID_ARCHS = "x86_64 arm64";
 			};
 			name = Debug;
 		};
@@ -365,7 +364,8 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_ENTITLEMENTS = OpenCV_macOS/OpenCV_macOS.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = Y5FE5M8RRY;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -379,10 +379,12 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.TDHM.OpenCV-macOS";
 				PRODUCT_NAME = "OpenCV for macOS";
-				VALID_ARCHS = x86_64;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				VALID_ARCHS = "x86_64 arm64";
 			};
 			name = Release;
 		};
