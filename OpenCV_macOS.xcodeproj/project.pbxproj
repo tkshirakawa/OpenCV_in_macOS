@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC1453E7256F500F0077179D /* OpenCL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC1453E6256F500F0077179D /* OpenCL.framework */; };
 		CC2033A323C2397B00B58D5A /* OCVImage.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2033A223C2397B00B58D5A /* OCVImage.m */; };
 		CC4CE3E323C4359000E29E11 /* Philadelphia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CC4CE3E023C4358F00E29E11 /* Philadelphia.jpg */; };
 		CC58474D23C0FCB100F42D55 /* OCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = CC58474C23C0FCB100F42D55 /* OCV.mm */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC1453E6256F500F0077179D /* OpenCL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenCL.framework; path = System/Library/Frameworks/OpenCL.framework; sourceTree = SDKROOT; };
 		CC2033A023C2011500B58D5A /* OCVColorConversionCodes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCVColorConversionCodes.h; sourceTree = "<group>"; };
 		CC2033A123C2397B00B58D5A /* OCVImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCVImage.h; sourceTree = "<group>"; };
 		CC2033A223C2397B00B58D5A /* OCVImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCVImage.m; sourceTree = "<group>"; };
@@ -50,6 +52,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCBF983124F3C6CA00E63FC9 /* CoreGraphics.framework in Frameworks */,
+				CC1453E7256F500F0077179D /* OpenCL.framework in Frameworks */,
 				CCDA210723C40BB900665D0C /* Accelerate.framework in Frameworks */,
 				CCCD73EB23BCE0A40013259A /* opencv2.framework in Frameworks */,
 			);
@@ -119,6 +122,7 @@
 			children = (
 				CCBF983024F3C6CA00E63FC9 /* CoreGraphics.framework */,
 				CCDA210623C40BB900665D0C /* Accelerate.framework */,
+				CC1453E6256F500F0077179D /* OpenCL.framework */,
 				CCCD73EA23BCE0A40013259A /* opencv2.framework */,
 			);
 			name = Frameworks;
@@ -331,7 +335,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_ENTITLEMENTS = OpenCV_macOS/OpenCV_macOS.entitlements;
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
@@ -362,7 +366,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_ENTITLEMENTS = OpenCV_macOS/OpenCV_macOS.entitlements;
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
